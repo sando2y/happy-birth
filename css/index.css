@@ -112,3 +112,24 @@ h1 {
 .part span.active {
 	background-position: 0 -90%;
 }
+/* login page */
+.login-form {
+    height: 100vh;
+    background-color: #4D869C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.login-form .form-container {
+    background-color: #7AB2B2;
+    padding: 20px 30px;
+}
+.login-form .form-container input {
+    /* background-color: transparent; */
+}
+#subBtn {
+    border: 1px solid #fff;
+    border-radius: 100vh;
+    color: #fff;
+}
