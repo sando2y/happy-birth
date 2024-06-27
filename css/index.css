@@ -125,9 +125,6 @@ h1 {
     background-color: #7AB2B2;
     padding: 20px 30px;
 }
-.login-form .form-container input {
-    /* background-color: transparent; */
-}
 #subBtn {
     border: 1px solid #fff;
     border-radius: 100vh;
