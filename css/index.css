@@ -3,17 +3,27 @@ body {
     overflow-x: hidden;
 }
 .header {
+    background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0,0,0,0.5))), url("../images/masr-elgteda-3bat.jpg");
+    background-image:-o-linear-gradient(rgba(0,0,0,0.5) 0 100%), url("../images/masr-elgteda-3bat.jpg");
     background-image:linear-gradient(rgba(0,0,0,0.5) 0 100%), url("../images/masr-elgteda-3bat.jpg");
     background-size: cover;
     background-position: center center;
     height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     position: relative;
 }
 
 .content{
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     color: #EEF7FF;
     padding: 15px;
@@ -35,7 +45,8 @@ body {
     background-color: #EEF7FF;
     color: #4D869C;
     border: none;
-    box-shadow: 1px 1px 5px  gray;
+    -webkit-box-shadow: 1px 1px 5px  gray;
+            box-shadow: 1px 1px 5px  gray;
 }
 .number-section .card i{
     font-size: 30px;
@@ -66,9 +77,13 @@ h1 {
 }
 
 .dominos-container {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	gap: 2em;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	font-size: 1vw;
 }
 .colon,
@@ -77,10 +92,16 @@ h1 {
 }
 .domino {
 	width: 12em;
+	background: -webkit-gradient(linear, left top, right bottom, from(#7AB2B2), to(#4D869C));
+	background: -o-linear-gradient(top left, #7AB2B2, #4D869C);
 	background: linear-gradient(to bottom right, #7AB2B2, #4D869C);
-	box-shadow: inset 0.1em 0.1em 0.2em rgba(135, 206, 250, 0.2), 
+	-webkit-box-shadow: inset 0.1em 0.1em 0.2em rgba(135, 206, 250, 0.2), 
             inset -0.1em -0.1em 0.2em #4D869C, 
             0.1em 0.1em 2em #7AB2B2;
+	        box-shadow: inset 0.1em 0.1em 0.2em rgba(135, 206, 250, 0.2), 
+            inset -0.1em -0.1em 0.2em #4D869C, 
+            0.1em 0.1em 2em #7AB2B2;
+	display: -ms-grid;
 	display: grid;
 	border-radius: 1em;
 	gap: 2em;
@@ -90,11 +111,14 @@ h1 {
 	content: "";
 	height: 0.25em;
 	background: white;
+	-ms-grid-row: 2;
 	grid-row: 2;
 	border-radius: 0.25em;
 }
 .domino .part {
+	display: -ms-grid;
 	display: grid;
+	-ms-grid-columns: 1fr 1em 1fr 1em 1fr;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 1em;
 }
@@ -103,9 +127,13 @@ h1 {
 	aspect-ratio: 1/1;
 	width: 100%;
 	border-radius: 50%;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, rgba(240, 240, 240)));
+	background-image: -o-linear-gradient(transparent 50%, rgba(240, 240, 240) 50%);
 	background-image: linear-gradient(transparent 50%, rgba(240, 240, 240) 50%);
 	background-size: 100% 220%;
 	background-position: 0 0%;
+	-webkit-transition: background-position 0.25s ease;
+	-o-transition: background-position 0.25s ease;
 	transition: background-position 0.25s ease;
 }
 
@@ -116,9 +144,15 @@ h1 {
 .login-form {
     height: 100vh;
     background-color: #4D869C;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
 }
 .login-form .form-container {
