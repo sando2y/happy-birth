@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="content">
+        <h1 class="content-text text-center">
+          happy birthday <br />
+          <span id="names" class="text-center"></span>
+        </h1>
+      </div>
+      <canvas id="canvas">Canvas is not supported in your browser.</canvas>
+    </div>
+    <!-- our numbers -->
+    <div class="number-section py-5" id="num-section">
+      <div class="row justify-content-center align-items-center gy-4">
+        <div class="col-md-4">
+          <div class="card text-center">
+            <i class="fa-solid fa-cake-candles"></i>
+            <h3>b2a 3ndna</h3>
+            <p><span class="number" data-goal="23">0</span> sana</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card text-center">
+            <i class="fa-solid fa-champagne-glasses"></i>
+            <h3>3rfk b2aly</h3>
+            <p><span data-goal="979" class="number">0</span> youm</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- video -->
+    <div class="video-section py-5">
+      <div class="container text-center">
+        <h2 class="fw-bold mb-2">Our Memories</h2>
+        <video muted loop autoplay class="col-md-4 col-12 rounded-2">
+          <source src="images/sand.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </div>
+    <!-- domino -->
+    <div class="w-100 py-5 dmo-container">
+      <div class="container">
+        <h1 class="mb-4">Your birth year is</h1>
+        <div class="dominos-container">
+          <div class="domino">
+            <div class="part part-top">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span class="active"></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="part part-bottom">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <div class="colon">/</div>
+          <div class="domino">
+            <div class="part part-top">
+              <span class="active"></span>
+              <span></span>
+              <span class="active"></span>
+              <span></span>
+              <span class="active"></span>
+              <span></span>
+              <span class="active"></span>
+              <span></span>
+              <span class="active"></span>
+            </div>
+            <div class="part part-bottom">
+              <span class="active"></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span class="active"></span>
+            </div>
+          </div>
+
+          <div class="colon">/</div>
+          <div class="domino">
+            <div class="part part-top">
+              <span class="active"></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span class="active"></span>
+            </div>
+            <div class="part part-bottom">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+
+          <div class="domino">
+            <div class="part part-top">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="part part-bottom">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <div class="domino">
+            <div class="part part-top">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="part part-bottom">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <div class="domino">
+            <div class="part part-top">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span class="active"></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="part part-bottom">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- prortfolio -->
+    <div class="portfolio">
+      <div class="container">
+        <div class="row justify-content-center align-items-center gy-3">
+          <div class="col-md-4">
+            <div class="card" >
+              <img src="images/animation.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">3obt <i class="fa-solid fa-exclamation"></i></h5>
+                <p class="card-text">
+                  Happy birthday, my best friend
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card" >
+              <img src="images/coffie-photo.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Amar <i class="fa-solid fa-moon"></i></h5>
+                <p class="card-text">
+                  Happy birthday, my best friend
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card" >
+              <img src="images/donats.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">g3anen 3ltol <i class="fa-solid fa-cookie-bite"></i></h5>
+                <p class="card-text">
+                  Happy birthday, my best friend
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card" >
+              <img src="images/first-phorto.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">lka2 b3d el 3asfa <i class="fa-solid fa-tornado"></i></h5>
+                <p class="card-text">
+                  Happy birthday, my best friend
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card" >
+              <img src="images/sgara-coffie.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">sya3a w 2lt adb <i class="fa-solid fa-smoking"></i></h5>
+                <p class="card-text">
+                  Happy birthday, my best friend
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card" >
+              <img src="images/ta5rog-photo.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">5lsna mn omha <i class="fa-solid fa-graduation-cap"></i></h5>
+                <p class="card-text">
+                  Happy birthday, my best friend
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card" >
+              <img src="images/wa7na-bntm4a.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">mshy w ryada <i class="fa-solid fa-person-running"></i></h5>
+                <p class="card-text">
+                  Happy birthday, my best friend
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card" >
+              <img src="images/header.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">aktr sora b7bha m3rf4 leh</i></h5>
+                <p class="card-text">
+                  Happy birthday, my best friend
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#names", {
+        strings: ["sandy", "sandod", "sandody", "sando2y^1000"],
+        typeSpeed: 300,
+        loop: true,
+        backSpeed: 100,
+        smartBackspace: false,
+      });
+    </script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
