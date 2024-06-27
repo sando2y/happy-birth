@@ -1,6 +1,6 @@
 document.getElementById("subBtn").addEventListener("click", (e) => {
   if (soulValidation()) {
-    console.log(e.target.setAttribute("href", "home.html"));
+    e.target.setAttribute("href", "home.html")
   }
 });
 function soulValidation() {
@@ -13,4 +13,3 @@ function soulValidation() {
     return false;
   }
 }
-console.log(location.pathname);
