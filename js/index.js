@@ -329,7 +329,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const observerOptions = {
     root: null, // Use the viewport as the container
     rootMargin: "0px",
-    threshold: 0.5, // Start the counter when 10% of the element is visible
+    threshold: 0.1, // Start the counter when 10% of the element is visible
   };
 
   const observerCallback = (entries, observer) => {
